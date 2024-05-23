@@ -6,12 +6,13 @@ With the Pi connected to the ThingSpeak MQTT broker, it publishes the temperatur
 
 ## Raspberry Pi
 Download device credentials as plaintext. Create file for configuration data. Enter the contents of the plaintext credentials into file.
-###
+### Config file
+
 
 
 In same directory create the python script for publishing temperature.
 ### Python Script
-
+```
 #!/usr/bin/python3
 
 import paho.mqtt.client as mqtt
@@ -97,7 +98,7 @@ while True:
        sense.set_rotation(270)
     else:
        sense.set_rotation(0)
-
+```
 
 ## Demonstration
 
