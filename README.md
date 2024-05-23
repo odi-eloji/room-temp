@@ -1,5 +1,6 @@
-# wearther
+# MMM-room-temp
 Odi and Ndey iot project
 
-This web application will give the user information about the weatherwear for the day in their area. As the user will have a personalized account on the app where they store images of clothing they usually wear, they will be advised on what to wear for the day according to the weather forecast.
+This Magic mirror module takes a room temperature reading using the Sense Hat attached to a Raspberry Pi.
+With the Pi connected to the ThingSpeak MQTT broker, it publishes the temperature to a channel that Magic Mirror is subsribed to, updating the room temperature using the data entered in the channel field.
 
