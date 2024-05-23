@@ -8,7 +8,13 @@ With the Pi connected to the ThingSpeak MQTT broker, it publishes the temperatur
 Download device credentials as plaintext. Create file for configuration data. Enter the contents of the plaintext credentials into file.
 ### Config file
 
-
+```
+username = *****
+clientId = *****
+password = *****
+channelId=*****
+transmissionInterval= ##
+```
 
 In same directory create the python script for publishing temperature.
 ### Python Script
