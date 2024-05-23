@@ -5,7 +5,7 @@ This Magic mirror module takes a room temperature reading using the Sense Hat at
 With the Pi connected to the ThingSpeak MQTT broker, it publishes the temperature to a channel that Magic Mirror is subsribed to, updating the room temperature using the data entered in the channel field.
 
 ## Raspberry Pi
-Download device credentials as plaintext. Create file for configuration data. Enter the contents of the plaintext credentials into file.
+Download ThingSpeak MQTT device credentials as plaintext. Create file for configuration data. Enter the contents of the plaintext credentials into file.
 ### Config file
 
 ```
@@ -16,7 +16,7 @@ channelId=*****
 transmissionInterval= ##
 ```
 
-In same directory create the python script for publishing temperature.
+In same directory as config file, create a python script for publishing temperature.
 ### Python Script
 ```
 #!/usr/bin/python3
